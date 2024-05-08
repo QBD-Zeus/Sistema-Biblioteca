@@ -8,31 +8,31 @@ public class LivroDAO implements IDAO<Livro> {
 
   @Override
   public void cadastrar(Livro entidade) {
-    // TODO Auto-generated method stub
+    String sql = "INSERT INTO LIVRO (titulo,autor,numPaginas) VALUES (?, ?, ?)";
     throw new UnsupportedOperationException("Unimplemented method 'cadastrar'");
   }
 
   @Override
   public void atualizar(Livro entidade) {
-    // TODO Auto-generated method stub
+    String sql = "UPDATE LIVRO SET titulo=?, autor=? numPaginas=? WHERE ID=?";
     throw new UnsupportedOperationException("Unimplemented method 'atualizar'");
   }
 
   @Override
   public void excluir(int id) {
-    // TODO Auto-generated method stub
+    String sql = "DELETE FROM LIVRO WHERE ID=?";
     throw new UnsupportedOperationException("Unimplemented method 'excluir'");
   }
 
   @Override
   public Livro buscar(int id) {
-    // TODO Auto-generated method stub
+    String sql = "SELECT * FROM LIVRO";
     throw new UnsupportedOperationException("Unimplemented method 'buscar'");
   }
 
   @Override
   public List<Livro> listar() {
-    // TODO Auto-generated method stub
+    String sql = "SELECT * FROM LIVRO WHERE ID=?";
     throw new UnsupportedOperationException("Unimplemented method 'listar'");
   }
 
